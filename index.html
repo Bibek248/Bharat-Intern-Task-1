@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef88ae578a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Registration Form </h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p>Forgot Password <a href="#"> click Here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">sign up</button>
+                    <button type="button" id="signinBtn" class="disable">sign in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        let signupBtn = document.getE1elementById("signupBtn");
+        let signinBtn = document.getE1elementById("signinBtn");
+        let nameField = document.getE1elementById("nameField");
+        let title = document.getE1elementById("title");
+
+
+        signinBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "sign  In";
+        }
+    </script>
+
+</body>
+
+</html>
